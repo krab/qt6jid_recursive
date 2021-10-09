@@ -547,7 +547,7 @@ Jid &Jid::parseFromString(const QString &AJidStr)
 	}
 	else
 	{
-		*this = FJidCache.value(AJidStr);
+		*this = FJidCache.value(AJidStr, Jid::null);
 	}
 	return *this;
 }
